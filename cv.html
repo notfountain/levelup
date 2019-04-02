@@ -13,7 +13,7 @@
     <div style="display:inline-block; vertical-align:top; margin-top: 10px">
         <pre>
             Имя: Светлана Николенко
-            <a href="https://github.com/notfountain/levelup">Ссылка на репозиторий в GitHub</a>
+            <a href="https://github.com/notfountain/levelup" target="_blank">Ссылка на репозиторий в GitHub</a>
             Опыт работы: нет
         </pre>
     </div>
@@ -43,8 +43,9 @@
         <div style="margin-top: 10px">
             <span>Коммуникабельность:</span>
             <select>
-                <option>Не пришел(а) на собеседование</option>
-                <option>Закинул(а) ноги на стол</option>
+                <option value="" selected disabled hidden>Выбрать значение</option>
+                <option value="low">Не пришел(а) на собеседование</option>
+                <option value="high">Закинул(а) ноги на стол</option>
             </select>
         </div>
         <div style="margin-top: 10px">
@@ -60,9 +61,11 @@
         </div>
         <table style="border-collapse:collapse; margin-top:10px;" border="1">
             <caption style="text-align:left">Образование, курсы и т.п.</caption>
-            <th>#</th>
-            <th>Сроки обучения</th>
-            <th>Наименование учебного заведения, курсов</th>
+            <thead>   
+                <th>#</th>
+                <th>Сроки обучения</th>
+                <th>Наименование учебного заведения, курсов</th>
+            </thead>
             <tr>
                 <td>1</td>
                 <td>2014-2018гг.</td>
