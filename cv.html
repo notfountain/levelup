@@ -4,88 +4,97 @@
     <meta charset="utf-8" />
     <title>CV Junior Frontend-developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
-    <h1>Вакансия: Junior Frontend Developer</h1>
-    <img src="photo.jpg" alt="Фото соискателя" height="250px">
-    <div style="display:inline-block; vertical-align:top; margin-top: 10px">
-        <pre>
-            Имя: Светлана Николенко
-            <a href="https://github.com/notfountain/levelup" target="_blank">Ссылка на репозиторий в GitHub</a>
-            Опыт работы: нет
-        </pre>
+    <header>
+        <h1>Вакансия: Junior Frontend Developer</h1>
+    </header>
+    <div class="container">
+        <div class="main-information">
+            <img src="photo.jpg" alt="Фото соискателя" height="250px">
+            <div>
+                <p>
+                    Имя: Светлана Николенко<br>
+                    <a href="https://github.com/notfountain/levelup" target="_blank">Ссылка на репозиторий в GitHub 
+                        <i class="fas fa-external-link-alt"></i>
+                    </a> <br>
+                    Опыт работы: нет 
+                </p>
+            </div>
+        </div>
+        <div class="interview-date">
+            <span>Дата собеседования:</span>
+            <input type="date">
+            <i class="far fa-calendar-alt"></i>
+        </div>
+        <form>
+            <div style="margin-top: 10px">
+                <span>Уровень английского:</span><br>
+                <label><input type="radio" name="answer" value="bad">Плохо</label>
+                <label><input type="radio" name="answer" value="medium">Средне</label>
+                <label><input type="radio" name="answer" value="good" checked>Хорошо</label>
+                <label><input type="radio" name="answer" value="excellent">Превосходно</label>
+            </div>
+            <div style="margin-top: 10px">
+                <span>Ключевые навыки:</span>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS/LESS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <input type="text" placeholder="Введите навык...">
+                <button type="button" value="add skill">Добавить навык</button>
+            </div>
+            <div style="margin-top: 10px">
+                <span>Коммуникабельность:</span>
+                <select>
+                    <option value="" selected disabled hidden>Выбрать значение</option>
+                    <option value="low">Не пришел(а) на собеседование</option>
+                    <option value="high">Закинул(а) ноги на стол</option>
+                </select>
+            </div>
+            <div style="margin-top: 10px">
+                <span>Желаемая з/п</span>
+                <input type="number" placeholder="Введите значение...">
+            </div>
+            <div style="margin-top: 10px">
+                <span>Подходит по критериям:</span><br>
+                <label><input type="checkbox" name="criteria" value="english">Знание английского</label>
+                <label><input type="checkbox" name="criteria" value="salary">Оклад</label>
+                <label><input type="checkbox" name="criteria" value="skills">Навыки</label>
+                <label><input type="checkbox" name="criteria" value="love">Сразу видно, что свой человек</label>
+            </div>
+            <table style="border-collapse:collapse; margin-top:10px;" border="1">
+                <caption style="text-align:left">Образование, курсы и т.п.</caption>
+                <thead>   
+                    <th>#</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименование учебного заведения, курсов</th>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>2014-2018гг.</td>
+                    <td>СПбГУ, геоинформатика</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2018-2019гг.</td>
+                    <td>HTML Academy</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2019г.</td>
+                    <td>LevelUp</td>
+                </tr>
+            </table>
+            <div  style="margin-top:10px;">
+                <button type="submit" value="submit">Отправить</button>
+                <button type="reset" value="reset">Сбросить</button>
+            </div>
+        </form>
     </div>
-    <div style="margin-top:10px">
-        <span>Дата собеседования:</span>
-        <input type="date">
-        <i class="far fa-calendar-alt"></i>
-    </div>
-    <form>
-        <div style="margin-top: 10px">
-            <span>Уровень английского:</span><br>
-            <label><input type="radio" name="answer" value="bad">Плохо</label>
-            <label><input type="radio" name="answer" value="medium">Средне</label>
-            <label><input type="radio" name="answer" value="good" checked>Хорошо</label>
-            <label><input type="radio" name="answer" value="excellent">Превосходно</label>
-        </div>
-        <div style="margin-top: 10px">
-            <span>Ключевые навыки:</span>
-            <ul>
-                <li>HTML</li>
-                <li>CSS/LESS</li>
-                <li>JavaScript</li>
-            </ul>
-            <input type="text" placeholder="Введите навык...">
-            <button type="button" value="add skill">Добавить навык</button>
-        </div>
-        <div style="margin-top: 10px">
-            <span>Коммуникабельность:</span>
-            <select>
-                <option value="" selected disabled hidden>Выбрать значение</option>
-                <option value="low">Не пришел(а) на собеседование</option>
-                <option value="high">Закинул(а) ноги на стол</option>
-            </select>
-        </div>
-        <div style="margin-top: 10px">
-            <span>Желаемая з/п</span>
-            <input type="number" placeholder="Введите значение...">
-        </div>
-        <div style="margin-top: 10px">
-            <span>Подходит по критериям:</span><br>
-            <label><input type="checkbox" name="criteria" value="english">Знание английского</label>
-            <label><input type="checkbox" name="criteria" value="salary">Оклад</label>
-            <label><input type="checkbox" name="criteria" value="skills">Навыки</label>
-            <label><input type="checkbox" name="criteria" value="love">Сразу видно, что свой человек</label>
-        </div>
-        <table style="border-collapse:collapse; margin-top:10px;" border="1">
-            <caption style="text-align:left">Образование, курсы и т.п.</caption>
-            <thead>   
-                <th>#</th>
-                <th>Сроки обучения</th>
-                <th>Наименование учебного заведения, курсов</th>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>2014-2018гг.</td>
-                <td>СПбГУ, геоинформатика</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2018-2019гг.</td>
-                <td>HTML Academy</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>2019г.</td>
-                <td>LevelUp</td>
-            </tr>
-        </table>
-        <div  style="margin-top:10px;">
-            <button type="submit" value="submit">Отправить</button>
-            <button type="reset" value="reset">Сбросить</button>
-        </div>
-    </form>
 </body>
 </html>

@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: #f6f6f6;
+}
+.container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;;
+    background-color: #fff;
+}
+header {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    background-color: #424141;
+    color: white;
+    position: fixed; 
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+h1 {
+    margin:0;
+    line-height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 100;
+    font-size: 26px;
+    text-align: center;
+}
+.main-information {
+    margin-top: 10px;
+}
+.main-information div{
+    margin: 0;
+    margin-left: 40px;
+    font-weight: 300;
+    display:inline-block;
+    vertical-align:top;  
+    line-height: 50px;   
+}
+.main-information div p {
+    margin: 0;
+}
+.main-information img {
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+.main-information a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-information a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+.main-information a:active {
+    color: gray;
+}
+
+.interview-date {
+    margin-top: 10px;
+}
+input[type="date"] {
+    font-family: 'Roboto', sans-serif !important;
+}
