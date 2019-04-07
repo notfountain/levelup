@@ -11,7 +11,8 @@ input, select, button {
     font-family: 'Roboto', sans-serif !important;
     font-weight: 100 !important;
     border: 1px solid #424141;
-    border-radius: 2px;
+    border-radius: 3px;
+    padding: 5px;
 }
 input[type="text"],input[type="date"], input[type="number"], select {
     box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.3);
@@ -19,6 +20,7 @@ input[type="text"],input[type="date"], input[type="number"], select {
 
 input:hover, select:hover, input:focus, select:focus {
     border: 1px solid lightblue;
+    outline:none;
 }
 .container {
     width: 800px;
@@ -27,7 +29,7 @@ input:hover, select:hover, input:focus, select:focus {
     padding-top: 50px;
     padding-left: 10px;
     padding-right: 10px;;
-    background-color: #fff;
+    background:  linear-gradient(150deg, white 70%, lightblue 72%);
 }
 header {
     display: flex;
@@ -174,4 +176,9 @@ td {
 }
 .button-reset:hover {
     background-color: lightcoral;
+}
+
+tr.table-inform:hover {
+    background-color: #424141;
+    color: white;
 }
