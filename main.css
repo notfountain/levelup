@@ -13,6 +13,7 @@ input, select, button {
     border: 1px solid #424141;
     border-radius: 3px;
     padding: 5px;
+    cursor: pointer;
 }
 input[type="text"],input[type="date"], input[type="number"], select {
     box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.3);
@@ -104,6 +105,7 @@ form div, table {
     display: block;
     margin: 5px;
     font-style: italic;
+    cursor: pointer;
 }
 .skills ul {
     list-style: circle;
@@ -138,6 +140,7 @@ form div, table {
     display: block;
     margin: 5px;
     font-style: italic;
+    cursor: pointer;
 }
 
 .education caption {
